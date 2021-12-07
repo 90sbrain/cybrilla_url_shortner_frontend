@@ -69,8 +69,8 @@ function App() {
         <form method="post" name="url" onSubmit={genetateUrl}>
 
             <label id='enterUrl' style={{'font-weight': 'bold'}}>Enter Url</label>
-            <input type="text" name="url" value={state.url} onChange={changeHandler} />
-            <div className="errorMsg">{state.isInValidUrl && <div>
+            <input type="text" style={{'margin-botton': '12px'}} name="url" value={state.url} onChange={changeHandler} />
+            <div className="" style={{'line-height':'1.2', 'color':'red','margin-bottom': '12px' }}>{state.isInValidUrl && <div>
                     <div>{state.errMsg}</div>
                 </div>}</div>
 
